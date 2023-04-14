@@ -1,0 +1,68 @@
+@import 'align';
+@import 'color';
+@import 'size';
+@import 'transition';
+
+@icon-background-color: var(--icon-blue);
+
+.panel-row-icon(@background-color: @icon-background-color) {
+  .size(2rem, 2rem, 0.5rem);
+  .flex-diagonal-center;
+  padding: 0.1rem;
+  .background(@background-color);
+  color: var(--system-white);
+}
+
+.trade-detail-icon() {
+  &.薪资 {
+    background-color: var(--system-green);
+  }
+
+  &.补贴 {
+    background-color: var(--system-red);
+  }
+
+  &.奖金 {
+    background-color: var(--system-orange);
+  }
+
+  &.服饰 {
+    background-color: var(--system-orange);
+  }
+
+  &.饮食 {
+    background-color: var(--system-yellow);
+  }
+
+  &.住房 {
+    background-color: var(--system-blue);
+  }
+
+  &.交通 {
+    background-color: var(--system-indigo);
+  }
+
+  &.生活 {
+    background-color: var(--icon-green);
+  }
+
+  &.学习 {
+    background-color: var(--icon-brown);
+  }
+
+  &.医疗 {
+    background-color: var(--icon-red);
+  }
+
+  &.软件 {
+    background-color: var(--system-teal);
+  }
+
+  &.人情 {
+    background-color: var(--system-pink);
+  }
+
+  &.未分 {
+    background-color: var(--system-grey1);
+  }
+}

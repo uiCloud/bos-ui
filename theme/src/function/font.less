@@ -1,0 +1,67 @@
+@import '../variable';
+@import '../function';
+
+@default-font-size: 1rem;
+@default-font-color: var(--label-primary);
+
+.default-font(@font-size: @default-font-size) when (isnumber(@font-size)) {
+  font-size: @font-size;
+  font-weight: @default-font-weight;
+  color: @default-font-color;
+  .label-transition;
+}
+
+.default-font(@font-color: @default-font-color) when (iscolor(@font-color)) {
+  font-size: @default-font-size;
+  font-weight: @default-font-weight;
+  color: @font-color;
+}
+
+.font(@font-size, @font-weight) when (isnumber(@font-size)) and (isnumber(@font-weight)) {
+  font-size: @font-size;
+  font-weight: @font-weight;
+  color: @default-font-color;
+}
+
+.font(@font-size, @font-color) when (isnumber(@font-size)) and (iscolor(@font-color))  {
+  font-size: @font-size;
+  font-weight: @default-font-weight;
+  color: @font-color;
+}
+
+.font(@font-size, @font-weight, @font-color) {
+  font-size: @font-size;
+  font-weight: @font-weight;
+  color: @font-color;
+}
+
+.ellipsis-line() {
+  // [不能和 display: flex 同时使用]
+  // 单行文字，超出用省略号
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  white-space: nowrap;
+}
+
+.status-font() {
+  &.default {
+    color: var(--input-text-color);
+  }
+
+  &.primary {
+    color: var(--tag-label-blue);
+  }
+
+  &.success {
+    color: var(--tag-label-green);
+  }
+
+  &.warning {
+    color: var(--tag-label-yellow);
+  }
+
+  &.error {
+    color: var(--tag-label-red);
+  }
+}

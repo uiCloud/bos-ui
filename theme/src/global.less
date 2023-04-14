@@ -1,0 +1,55 @@
+@import 'function';
+@import 'variable';
+
+@font-face {
+  font-family: 'HarmonyOS_Regular';
+  src: url('./fonts/HarmonyOS_Sans_SC_Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+  // 抗锯齿渲染
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  user-select: none;
+  background: none;
+  font-family: HarmonyOS_Regular, Helvetica Neue, Microsoft YaHei, sans-serif;
+}
+
+input {
+  user-select: auto;
+}
+
+textarea {
+  user-select: auto;
+}
+
+input {
+  background: none;
+  outline: none;
+}
+
+input:focus {
+  border: none;
+}
+
+a,
+a:hover,
+a:active,
+a:visited {
+  .label-transition;
+  text-decoration: none;
+  outline: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+html, body {
+  .full-size;
+}

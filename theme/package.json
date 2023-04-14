@@ -1,5 +1,5 @@
 {
-  "name": "bos-ui-theme",
+  "name": "@bos-ui/bos-ui-theme",
   "version": "0.0.0",
   "description": "Bos ui component theme",
   "main": "lib/index.css",

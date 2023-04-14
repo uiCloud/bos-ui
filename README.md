@@ -1,6 +1,12 @@
 # bos-ui
+## Environment
+build on node.js v12.20.1
 
-
+## Bootstrap
+npm i -g npm@8.3.1
+sudo n 12.20.1
+npm i
+npm run docs
 
 ## Getting started
 

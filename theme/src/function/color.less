@@ -1,0 +1,6 @@
+@import 'transition';
+
+.hsl-color(@color) when (iscolor(@color)) {
+  @return-color: hsl(hue(@color), saturation(@color), lightness(@color));
+}
+

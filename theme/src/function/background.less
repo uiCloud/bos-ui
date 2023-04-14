@@ -1,0 +1,84 @@
+@import '../variable';
+@import 'transition';
+@import 'font';
+
+.background(@color: var(--web-background), @hover-color: @color) {
+  background-color: @color;
+  .background-transition;
+
+  &:hover {
+    background-color: @hover-color;
+  }
+}
+
+.input-background {
+  .status-font;
+
+  &.default {
+    background-color: var(--system-grey6);
+  }
+
+  &.primary {
+    background-color: var(--tag-background-blue);
+  }
+
+  &.success {
+    background-color: var(--tag-background-green);
+  }
+
+  &.warning {
+    background-color: var(--tag-background-yellow);
+  }
+
+  &.error {
+    background-color: var(--tag-background-red);
+  }
+}
+
+.input-prefix-background {
+  .status-font;
+
+  &.default {
+    background-color: var(--system-grey4);
+  }
+
+  &.primary {
+    background-color: var(--tag-label-blue);
+  }
+
+  &.success {
+    background-color: var(--tag-label-green);
+  }
+
+  &.warning {
+    background-color: var(--tag-label-yellow);
+  }
+
+  &.error {
+    background-color: var(--tag-label-red);
+  }
+}
+
+.tag-background {
+  .status-font;
+
+  &.default {
+    background-color: var(--system-grey6);
+  }
+
+  &.primary {
+    background-color: var(--tag-background-blue);
+  }
+
+  &.success {
+    background-color: var(--tag-background-green);
+  }
+
+  &.warning {
+    background-color: var(--tag-background-yellow);
+  }
+
+  &.error {
+    background-color: var(--tag-background-red);
+  }
+}

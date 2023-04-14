@@ -1,0 +1,42 @@
+.absolute-position(@length) {
+  position: absolute;
+  top: @length;
+  left: @length;
+}
+
+.absolute-position(@top, @left) {
+  position: absolute;
+  top: @top;
+  left: @left;
+}
+
+.absolute-position(@top, @left, @z-index) {
+  position: absolute;
+  top: @top;
+  left: @left;
+  z-index: @z-index;
+}
+
+.relative-position(@length) {
+  position: relative;
+  top: @length;
+  left: @length;
+}
+
+.relative-position(@top, @left) {
+  position: relative;
+  top: @top;
+  left: @left;
+}
+
+.fixed-position(@length) {
+  position: fixed;
+  top: @length;
+  left: @length;
+}
+
+.fixed-position(@top, @left) {
+  position: fixed;
+  top: @top;
+  left: @left;
+}

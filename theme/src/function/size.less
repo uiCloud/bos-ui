@@ -1,0 +1,34 @@
+@full: 100%;
+
+.size(@length) {
+  width: @length;
+  height: @length;
+}
+
+.size(@width, @height) {
+  width: @width;
+  height: @height;
+}
+
+.size(@width, @height, @border-radius) {
+  width: @width;
+  height: @height;
+  border-radius: @border-radius;
+}
+
+.full-size() {
+  .size(@full);
+}
+
+.full-size(@border-radius) {
+  .size(@full);
+  border-radius: @border-radius;
+}
+
+.full-width(@height) {
+  .size(@full, @height);
+}
+
+.full-height(@width) {
+  .size(@width, @full);
+}

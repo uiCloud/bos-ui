@@ -1,0 +1,45 @@
+.physical-transition() {
+  transition: .2s all ease-in-out;
+}
+
+.background-transition() {
+  transition: .2s background-color linear;
+}
+
+.color-transition() {
+  transition: .2s color linear;
+}
+
+.button-transition() {
+  transition: .2s all ease;
+}
+
+.label-transition() {
+  transition: .2s all ease-in;
+}
+
+.icon-transition() {
+  transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.expend-transition() {
+  transition: visibility 0s linear 1s;
+}
+
+.fade-up-enter-active, .fade-up-leave-active{
+  transition: all .2s ease;
+  transform-origin: center top;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .2s;
+}
+
+.fade-up-enter,.fade-up-leave-to{
+  opacity: 0;
+  transform: scaleY(0);
+}
+
+.fade-enter, .fade-leave-to{
+  opacity: 0;
+}
