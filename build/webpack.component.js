@@ -22,9 +22,9 @@ module.exports = {
     libraryTarget: 'commonjs2'
   },
   resolve: {
-    extensions: ['.js', '.vue', '.json'],
+    extensions: [ '.js', '.vue', '.json' ],
     alias: config.alias,
-    modules: ['node_modules']
+    modules: [ 'node_modules' ]
   },
   module: {
     rules: [
@@ -45,7 +45,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loaders: ['style-loader', 'css-loader']
+        loaders: [ 'style-loader', 'css-loader' ]
       },
       {
         test: /\.(svg|otf|ttf|woff2?|eot|gif|png|jpe?g)(\?\S*)?$/,

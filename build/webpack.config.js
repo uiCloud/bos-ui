@@ -6,7 +6,7 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin')
 module.exports = {
   mode: 'production',
   entry: {
-    app: ['./src/index.js']
+    app: [ './src/index.js' ]
   },
   output: {
     path: path.resolve(process.cwd(), './dist'),
@@ -19,7 +19,7 @@ module.exports = {
     umdNamedDefine: true
   },
   resolve: {
-    extensions: ['.js', '.vue', '.json'],
+    extensions: [ '.js', '.vue', '.json' ],
     alias: config.alias
   },
   module: {

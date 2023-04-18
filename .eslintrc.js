@@ -9,7 +9,7 @@ module.exports = {
     'eslint:recommended'
   ],
   parserOptions: {
-    ecmaVersion: 6,
+    ecmaVersion: 8,
     ecmaFeatures: {
       jsx: true
     }
@@ -19,7 +19,9 @@ module.exports = {
     'vue/multi-word-component-names': 0,
 
     /// ====== default rule ======
-    'array-bracket-spacing': ['error', 'never'],
+    'array-bracket-spacing': [ 'error', 'always' ],
+
+    'object-curly-spacing': [ 'error', 'always' ],
 
     camelcase: [
       'error',
@@ -28,11 +30,11 @@ module.exports = {
       }
     ],
 
-    'comma-dangle': ['error', 'never'],
+    'comma-dangle': [ 'error', 'never' ],
 
-    curly: ['error', 'all'],
+    curly: [ 'error', 'all' ],
 
-    'eol-last': ['error'],
+    'eol-last': [ 'error' ],
 
     indent: [
       'error',
@@ -42,7 +44,7 @@ module.exports = {
       }
     ],
 
-    'keyword-spacing': ['error'],
+    'keyword-spacing': [ 'error' ],
 
     'max-len': [
       'error',
@@ -53,19 +55,19 @@ module.exports = {
       }
     ],
 
-    'no-else-return': ['error'],
+    'no-else-return': [ 'error' ],
 
-    'no-mixed-spaces-and-tabs': ['error'],
+    'no-mixed-spaces-and-tabs': [ 'error' ],
 
-    'no-multiple-empty-lines': ['error'],
+    'no-multiple-empty-lines': [ 'error' ],
 
-    'no-spaced-func': ['error'],
+    'no-spaced-func': [ 'error' ],
 
-    'no-trailing-spaces': ['error'],
+    'no-trailing-spaces': [ 'error' ],
 
-    'no-undef': ['error'],
+    'no-undef': [ 'error' ],
 
-    'no-unexpected-multiline': ['error'],
+    'no-unexpected-multiline': [ 'error' ],
 
     'no-unused-vars': [
       'error',
@@ -84,13 +86,13 @@ module.exports = {
       }
     ],
 
-    semi: ['error', 'never'],
+    semi: [ 'error', 'never' ],
 
-    'space-before-blocks': ['error', 'always'],
+    'space-before-blocks': [ 'error', 'always' ],
 
-    'space-before-function-paren': ['error', 'never'],
+    'space-before-function-paren': [ 'error', 'never' ],
 
-    'space-in-parens': ['error', 'never'],
+    'space-in-parens': [ 'error', 'never' ],
 
     'space-unary-ops': [
       'error',
@@ -112,7 +114,7 @@ module.exports = {
       }
     ],
 
-    'arrow-parens': ['error', 'always'],
+    'arrow-parens': [ 'error', 'always' ],
 
     'arrow-spacing': [
       'error',
@@ -122,19 +124,19 @@ module.exports = {
       }
     ],
 
-    'no-class-assign': ['error'],
+    'no-class-assign': [ 'error' ],
 
-    'no-const-assign': ['error'],
+    'no-const-assign': [ 'error' ],
 
-    'no-dupe-class-members': ['error'],
+    'no-dupe-class-members': [ 'error' ],
 
-    'no-duplicate-imports': ['error'],
+    'no-duplicate-imports': [ 'error' ],
 
-    'no-new-symbol': ['error'],
+    'no-new-symbol': [ 'error' ],
 
-    'no-useless-rename': ['error'],
+    'no-useless-rename': [ 'error' ],
 
-    'no-var': ['error'],
+    'no-var': [ 'error' ],
 
     'object-shorthand': [
       'error',
@@ -153,12 +155,12 @@ module.exports = {
       }
     ],
 
-    'prefer-const': ['error'],
+    'prefer-const': [ 'error' ],
 
-    'prefer-rest-params': ['error'],
+    'prefer-rest-params': [ 'error' ],
 
-    'prefer-template': ['error'],
+    'prefer-template': [ 'error' ],
 
-    'template-curly-spacing': ['error', 'never']
+    'template-curly-spacing': [ 'error', 'never' ]
   }
 }
