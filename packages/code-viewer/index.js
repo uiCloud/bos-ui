@@ -1,4 +1,4 @@
-import CodeViewer from './code-viewer'
+import CodeViewer from './src/code-viewer'
 
 CodeViewer.install = function(Vue) {
   Vue.component(CodeViewer.name, CodeViewer)

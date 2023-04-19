@@ -10,7 +10,7 @@
 
 @import "../function";
 
-.x-switch {
+.b-switch {
   min-width: 44px;
   height: 22px;
   border-radius: 20px;
@@ -42,7 +42,7 @@
   }
 
   // slot
-  .x-switch-inner {
+  .b-switch-inner {
     width: 100%;
     display: block;
     padding-right: 8px;
@@ -52,37 +52,37 @@
     font-size: 12px;
   }
 
-  &.x-switch-checked {
-    &.x-switch-primary {
+  &.b-switch-checked {
+    &.b-switch-primary {
       background-color: @primary;
     }
 
-    &.x-switch-info {
+    &.b-switch-info {
       background-color: @info;
     }
 
-    &.x-switch-danger {
+    &.b-switch-danger {
       background-color: @danger;
     }
 
-    &.x-switch-success {
+    &.b-switch-success {
       background-color: @success;
     }
 
-    &.x-switch-disabled {
-      &.x-switch-primary {
+    &.b-switch-disabled {
+      &.b-switch-primary {
         background-color: fade(@primary, 20%);
       }
 
-      &.x-switch-info {
+      &.b-switch-info {
         background-color: fade(@info, 20%);
       }
 
-      &.x-switch-danger {
+      &.b-switch-danger {
         background-color: fade(@danger, 20%);
       }
 
-      &.x-switch-success {
+      &.b-switch-success {
         background-color: fade(@success, 20%);
       }
 
@@ -97,7 +97,7 @@
       transform: translateX(-100%)
     }
 
-    .x-switch-inner {
+    .b-switch-inner {
       text-align: left;
       padding-right: 25px;
       padding-left: 8px;
@@ -105,7 +105,7 @@
   }
 
 
-  &.x-switch-disabled {
+  &.b-switch-disabled {
     cursor: not-allowed;
     background-color: #efefef;
 

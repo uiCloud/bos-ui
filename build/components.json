@@ -1,3 +1,4 @@
 {
-  "switch": "packages/switch/index.js"
+  "switch": "packages/switch/index.js",
+  "upload": "packages/upload/index.js"
 }

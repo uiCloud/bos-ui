@@ -34,16 +34,16 @@ export default {
   render() {
     const className = {
       class: [
-        'x-switch',
-        this.type && `x-switch-${this.type}`
+        'b-switch',
+        this.type && `b-switch-${this.type}`
       ]
     }
-    this.isChecked && className.class.push('x-switch-checked')
-    this.disabled && className.class.push('x-switch-disabled')
+    this.isChecked && className.class.push('b-switch-checked')
+    this.disabled && className.class.push('b-switch-disabled')
 
     return (
       <button onClick={this.clickHandle} {...className}>
-        <span class="x-switch-inner">
+        <span class="b-switch-inner">
           {this.isChecked ? this.$slots.open : this.$slots.close}
         </span>
       </button>

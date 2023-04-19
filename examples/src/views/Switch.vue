@@ -1,6 +1,6 @@
 <template>
-  <div class="home">
-    <p>This is home</p>
+  <div class="about">
+    <h1>This is an switch page</h1>
     <b-switch v-model="switchValue">
       <div slot="open">open</div>
       <div slot="close">close</div>
@@ -16,7 +16,6 @@
 </template>
 
 <script>
-
 export default {
   name: 'HomeView',
   data() {
