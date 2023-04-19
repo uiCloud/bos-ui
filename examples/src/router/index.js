@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import HomeView from '../views/Home'
 import SwitchView from '../views/Switch'
 import UploadView from '../views/Upload'
+import CodeViewerView from '../views/CodeViewer'
 
 Vue.use(VueRouter)
 
@@ -21,6 +22,11 @@ const routes = [
     path: '/upload',
     name: 'upload',
     component: UploadView
+  },
+  {
+    path: '/code-viewer',
+    name: 'code-viewer',
+    component: CodeViewerView
   }
 ]
 

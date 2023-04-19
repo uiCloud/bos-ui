@@ -21,5 +21,4 @@ exports.alias = {
   '@': resolve('src')
 }
 
-exports.jsexclude = /node_modules|utils\/popper\.js|utils\/date\.js|utils\/lodash\.js/
-
+exports.jsexclude = /node_modules|utils\/popper\.js|utils\/date\.js|utils\/lodash\.js|\.min\.js/

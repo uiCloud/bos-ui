@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="upload-view">
     <h1>This is an upload page</h1>
     <b-upload action="#">
       <button>上传</button>
@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  name: 'HomeView',
+  name: 'UploadView',
   data() {
     return {
     }

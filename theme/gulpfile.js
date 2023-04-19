@@ -1,6 +1,6 @@
 'use strict'
 
-const {series, src, dest} = require('gulp')
+const { series, src, dest } = require('gulp')
 const less = require('gulp-less')  // 编译gulp工具
 const autoprefixer = require('gulp-autoprefixer')  // 添加厂商前缀
 const cssmin = require('gulp-cssmin')  // 压缩css
@@ -19,9 +19,9 @@ function compile() {
 }
 
 function copyFont() {
-  return src('./src/fonts/**')  // 读取src/fonts下的所有文件
+  return src('./src/font/**')  // 读取src/fonts下的所有文件
     .pipe(cssmin())
-    .pipe(dest('./lib/fonts')) // 输出到lib/fonts下
+    .pipe(dest('./lib/font')) // 输出到lib/fonts下
 }
 
 exports.build = series(compile, copyFont)

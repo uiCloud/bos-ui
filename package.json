@@ -11,7 +11,7 @@
   "scripts": {
     "docs": "npm run --prefix examples serve",
     "build:theme": "npm run --prefix theme build && cp-cli theme/lib dist/theme-default",
-    "clean": "rimraf lib && rimraf packages/*/lib && rimraf test/**/coverage",
+    "clean": "rimraf dist && rimraf theme/lib && rimraf test/**/coverage",
     "lint": "eslint src/**/* packages/**/* --ext .js,.jsx,.ts,.tsx,.vue,.html",
     "dist": "npm run clean && npm run lint --fix && webpack --config build/webpack.config.js && webpack --config build/webpack.common.js && webpack --config build/webpack.component.js && npm run build:theme"
   },

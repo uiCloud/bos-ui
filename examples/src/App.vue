@@ -3,7 +3,8 @@
     <nav>
       <router-link to="/">Home</router-link> |
       <router-link to="/switch">Switch</router-link> |
-      <router-link to="/upload">Upload</router-link>
+      <router-link to="/upload">Upload</router-link> |
+      <router-link to="/code-viewer">CodeViewer</router-link> |
     </nav>
     <router-view/>
   </div>

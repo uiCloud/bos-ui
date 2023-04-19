@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="switch-viewer">
     <h1>This is an switch page</h1>
     <b-switch v-model="switchValue">
       <div slot="open">open</div>
@@ -17,7 +17,7 @@
 
 <script>
 export default {
-  name: 'HomeView',
+  name: 'SwitchView',
   data() {
     return {
       switchValue: false
