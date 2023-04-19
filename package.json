@@ -10,10 +10,13 @@
   ],
   "scripts": {
     "docs": "npm run --prefix examples serve",
-    "build:theme": "npm run --prefix theme build && cp-cli theme/lib dist/theme-default",
     "clean": "rimraf dist && rimraf theme/lib && rimraf test/**/coverage",
     "lint": "eslint src/**/* packages/**/* --ext .js,.jsx,.ts,.tsx,.vue,.html",
-    "dist": "npm run clean && npm run lint --fix && webpack --config build/webpack.config.js && webpack --config build/webpack.common.js && webpack --config build/webpack.component.js && npm run build:theme"
+    "build:theme": "npm run --prefix theme build && cp-cli theme/lib dist/theme-default",
+    "build:index": "webpack --config build/webpack.config.js",
+    "build:common": "webpack --config build/webpack.common.js",
+    "build:component": "webpack --config build/webpack.component.js",
+    "dist": "npm run clean && npm run lint --fix && npm run build:index && npm run build:common && npm run build:component && npm run build:theme"
   },
   "repository": {
     "type": "git",
