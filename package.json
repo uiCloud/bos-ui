@@ -20,7 +20,8 @@
     "url": "git+ssh://git@gitlab.com/Vicai/bos-ui.git"
   },
   "dependencies": {
-    "babel-helper-vue-jsx-merge-props": "^2.0.0"
+    "babel-helper-vue-jsx-merge-props": "^2.0.0",
+    "monaco-editor-webpack-plugin": "^7.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
@@ -34,11 +35,15 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-2": "^6.24.1",
     "cp-cli": "^1.0.2",
+    "css-loader": "^2.1.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.0.3",
+    "file-loader": "^1.1.11",
+    "monaco-editor": "^0.37.1",
     "rimraf": "^2.5.4",
+    "style-loader": "^0.23.1",
     "url-loader": "^4.1.1",
     "vue-loader": "^15.7.1",
     "vue-template-compiler": "2.5.21",
