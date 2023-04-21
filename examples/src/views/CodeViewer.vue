@@ -7,7 +7,7 @@
         :file-list="fileList"
         :on-change="handleChange"
     ></b-upload>
-    <code-viewer :origin-file="originFile"></code-viewer>
+    <code-viewer :code="text"></code-viewer>
   </div>
 </template>
 
@@ -18,24 +18,23 @@ export default {
   name: 'CodeViewerView',
   data() {
     return {
+      text: '',
+      language: '',
       originFile: {},
       fileList: []
     }
-  },
-  updated() {
-    console.info(this.fileList)
   },
   methods: {
     async previewFile(fileObject) {
       try {
         const arrayBuffer = await readBuffer(fileObject)
-        const text = await bufferToText(arrayBuffer)
-        const language = getFileExtension(fileObject.name)
+        this.text = await bufferToText(arrayBuffer)
+        this.language = getFileExtension(fileObject.name)
         this.originFile = {
           fileName: fileObject.name,
           rawFile: fileObject,
-          text,
-          language
+          text: this.text,
+          language: this.language
         }
       } catch (e) {
         console.error(e)
