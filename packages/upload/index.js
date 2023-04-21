@@ -1,7 +1,6 @@
-import Upload from './src/index'
+import { install } from '../../src/util/install'
+import Upload from './src/upload'
 
-Upload.install = function(Vue) {
-  Vue.component(Upload.name, Upload)
-}
-
-export default Upload
+export default install({
+  Upload
+})

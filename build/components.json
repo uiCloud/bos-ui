@@ -1,5 +1,6 @@
 {
   "switch": "packages/switch/index.js",
   "code-viewer": "packages/code-viewer/index.js",
+  "menu": "packages/menu/index.js",
   "upload": "packages/upload/index.js"
 }

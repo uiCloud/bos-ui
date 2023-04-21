@@ -1,11 +1,13 @@
 import Switch from '../packages/switch'
 import Upload from '../packages/upload'
 import CodeViewer from '../packages/code-viewer'
+import Menu from '../packages/menu'
 
 const components = {
   bSwitch: Switch,
   bUpload: Upload,
-  CodeViewer
+  CodeViewer,
+  Menu
 }
 
 const install = function(Vue, options = {}) {
@@ -26,5 +28,6 @@ export {
   install,
   Switch,
   Upload,
-  CodeViewer
+  CodeViewer,
+  Menu
 }
