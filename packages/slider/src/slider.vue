@@ -1,5 +1,5 @@
 <script>
-import { addClass, delClass } from '../../src/util/dom'
+import { addClass, delClass } from '../../../src/util/dom'
 
 export default {
   name: 'sliderTransition',
@@ -73,9 +73,11 @@ export default {
         afterLeave: this.afterLeave
       }
     }
-    return <transition {...listeners}>
-      {this.$slots.default}
-    </transition>
+    return (
+      <transition {...listeners}>
+        {this.$slots.default}
+      </transition>
+    )
   }
 }
 </script>

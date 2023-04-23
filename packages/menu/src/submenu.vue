@@ -13,10 +13,13 @@
 </template>
 
 <script>
-import sliderTransition from '../slider'
+import sliderTransition from 'packages/slider'
 
 export default {
   name: 'xSubmenu',
+  components: {
+    sliderTransition
+  },
   inject: [ 'rootMenu' ],
   data() {
     return {
@@ -28,9 +31,6 @@ export default {
       this.isActive = true
     })
     this.isActive = this.rootMenu.allOpend
-  },
-  components: {
-    sliderTransition
   },
   methods: {
     handleClick() {

@@ -17,6 +17,7 @@ module.exports = {
   rules: {
     // ====== custom rule ======
     'vue/multi-word-component-names': 0,
+    'vue/require-prop-type-constructor': 0,
 
     /// ====== default rule ======
     'array-bracket-spacing': [ 'error', 'always' ],
