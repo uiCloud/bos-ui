@@ -1,8 +1,8 @@
 <script>
-import emit from '../utils/emit'
+import emit from '../../../src/util/emit'
 
 export default {
-  name: 'xMenu',
+  name: 'bMenu',
   mixins: [ emit ],
   data() {
     return {
@@ -39,8 +39,8 @@ export default {
   },
   methods: {
     updateActiveName() {
-      this.broadcast('xSubmenu', 'on-update-active-name', false)
-      this.broadcast('xMenuItem', 'on-update-active-name', this.currentActiveName)
+      this.broadcast('bSubmenu', 'on-update-active-name', false)
+      this.broadcast('bMenuItem', 'on-update-active-name', this.currentActiveName)
     },
     handleItemClick(item) {
       this.currentActiveName = item.name
@@ -48,7 +48,7 @@ export default {
     }
   },
   render() {
-    return <ul class='x-menu'>{this.$slots.default}</ul>
+    return <ul class='b-menu'>{this.$slots.default}</ul>
   }
 }
 </script>

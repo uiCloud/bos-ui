@@ -1,14 +1,14 @@
 <template>
-  <li class='x-menu-item' @click.stop='handleClick' :class="{'active': isActive}">
+  <li class='b-menu-item' @click.stop='handleClick' :class="{'active': isActive}">
     <slot></slot>
   </li>
 </template>
 
 <script>
-import emit from '../utils/emit'
+import emit from '../../../src/util/emit'
 
 export default {
-  name: 'xMenuItem',
+  name: 'bMenuItem',
   mixins: [ emit ],
   props: {
     name: [ String, Number ],
@@ -23,7 +23,7 @@ export default {
     this.$on('on-update-active-name', (name) => {
       if (name === this.name) {
         this.isActive = true
-        this.dispatch('xSubmenu', 'item-click', this)
+        this.dispatch('bSubmenu', 'item-click', this)
         this.isRoute()
       } else {
         this.isActive = false
@@ -32,7 +32,7 @@ export default {
   },
   methods: {
     handleClick(e) {
-      this.dispatch('xMenu', 'item-click', this)
+      this.dispatch('bMenu', 'item-click', this)
       this.$emit('click', this)
       this.isRoute()
     },

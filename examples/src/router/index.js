@@ -1,9 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/Home'
-import SwitchView from '../views/Switch'
-import UploadView from '../views/Upload'
-import CodeViewerView from '../views/CodeViewer'
+import componentViews from './router'
 
 Vue.use(VueRouter)
 
@@ -12,23 +10,12 @@ const routes = [
     path: '/',
     name: 'home',
     component: HomeView
-  },
-  {
-    path: '/switch',
-    name: 'switch',
-    component: SwitchView
-  },
-  {
-    path: '/upload',
-    name: 'upload',
-    component: UploadView
-  },
-  {
-    path: '/code-viewer',
-    name: 'code-viewer',
-    component: CodeViewerView
   }
 ]
+
+componentViews.forEach((view) => {
+  routes.push(...view.route)
+})
 
 const router = new VueRouter({
   mode: 'history',

@@ -6,8 +6,8 @@ import Menu from '../packages/menu'
 const components = {
   bSwitch: Switch,
   bUpload: Upload,
-  CodeViewer,
-  Menu
+  bMenu: Menu,
+  CodeViewer
 }
 
 const install = function(Vue, options = {}) {

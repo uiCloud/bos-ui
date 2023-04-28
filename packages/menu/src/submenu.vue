@@ -1,11 +1,11 @@
 <template>
-  <li class="x-submenu" @click.stop="handleClick" :class="{'is-opened': isActive}">
-    <div class="x-menu-title">
+  <li class="b-submenu" @click.stop="handleClick" :class="{'is-opened': isActive}">
+    <div class="b-menu-title">
       <slot name="title"></slot>
-      <i class="x-arrow" :class="{'is-active': isActive}"></i>
+      <i class="b-arrow" :class="{'is-active': isActive}"></i>
     </div>
     <slider-transition>
-      <ul class="x-menu" v-show="isActive">
+      <ul class="b-menu" v-show="isActive">
         <slot></slot>
       </ul>
     </slider-transition>
@@ -13,10 +13,10 @@
 </template>
 
 <script>
-import sliderTransition from 'packages/slider'
+import sliderTransition from '../../../packages/slider'
 
 export default {
-  name: 'xSubmenu',
+  name: 'bSubmenu',
   components: {
     sliderTransition
   },
